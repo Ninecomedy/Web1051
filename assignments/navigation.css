@@ -9,10 +9,10 @@
 .collection-nav a {
     display: inline-block;
     padding: 11px 18px;
-    border: 1px solid #4b435f;
+    border: 1px solid #aa91e8;
     border-radius: 6px;
-    background-color: #121520;
-    color: #ddd1fa;
+    background-color: #ad94ed;
+    color: #171222;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.8;
@@ -20,8 +20,8 @@
     transition: background-color 0.2s;
 }
 .collection-nav a:hover {
-    background-color: #2b263a;
-    color: #edf0f8;
+    background-color: #c5b1f7;
+    color: #171222;
 }
 .collection-nav a:focus {
     box-shadow: 0 0 0 2px #c4a5f2;

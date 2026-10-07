@@ -1,23 +1,11 @@
-window.onload = setupIngredients;
+window.onload = setupPortfolioLink;
 
-function setupIngredients() {
-    let ingredients = document.querySelectorAll('input[name="ingredient"]');
-    for (let i = 0; i < ingredients.length; i++) {
-        ingredients[i].addEventListener('change', updateIngredients);
-    }
-    updateIngredients();
+function setupPortfolioLink() {
+    let link = document.querySelector('.collection-nav a');
+    link.addEventListener('click', returnToPortfolio);
 }
 
-function updateIngredients() {
-    let ingredients = document.querySelectorAll('input[name="ingredient"]');
-
-    for (let i = 0; i < ingredients.length; i++) {
-        if (ingredients[i].checked) {
-
-            ingredients[i].parentNode.classList.add('ingredient-ready');
-        } else {
-            ingredients[i].parentNode.classList.remove('ingredient-ready');
-        }
-    }
-
+function returnToPortfolio(event) {
+    event.preventDefault();
+    window.location.href = '../../index.html#assignments';
 }

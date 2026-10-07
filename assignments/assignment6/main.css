@@ -2,8 +2,8 @@
 
 body {
     margin: 0;
-    background-color: #100c1c;
-    color: #eee9fa;
+    background-color: #eaf6ff;
+    color: #111111;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.6;
@@ -16,12 +16,12 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px 6%;
-    border-bottom: 1px solid #302440;
-    background-color: #151021;
+    border-bottom: 1px solid #7cc7ff;
+    background-color: #ffffff;
 }
 
 .brand {
-    color: #f1e9ff;
+    color: #111111;
     font-size: 23px;
     font-weight: bold;
     letter-spacing: 4px;
@@ -30,7 +30,7 @@ body {
 
 .brand span {
     margin-left: 12px;
-    color: #b4a2ce;
+    color: #34566e;
     font-size: 10px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -43,15 +43,15 @@ body {
 
 .navigation a {
     padding: 4px 0;
-    color: #b4a2ce;
+    color: #34566e;
     font-size: 13px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
 }
 
 .navigation a:hover, .navigation .active {
-    color: #edddff;
-    border-bottom-color: #b185ef;
+    color: #1676b3;
+    border-bottom-color: #7cc7ff;
 }
 
 .page-container {
@@ -71,7 +71,7 @@ body {
 }
 
 .eyebrow {
-    color: #b79ada;
+    color: #1676b3;
     font-size: 10px;
     letter-spacing: 2px;
 }
@@ -84,17 +84,17 @@ h1 {
 
 .intro > p.body-copy {
     margin: 0;
-    color: #b7aac9;
+    color: #455a68;
     font-size: 14px;
 }
 
 .form-card {
     padding: 28px 32px;
-    border: 1px solid #4b3567;
-    border-top: 3px solid #a576e5;
+    border: 1px solid #7cc7ff;
+    border-top: 3px solid #7cc7ff;
     border-radius: 12px;
-    background-color: #1b1429;
-    box-shadow: 0 0 28px rgba(133, 75, 210, 0.10);
+    background-color: #ffffff;
+    box-shadow: 0 0 28px rgba(47, 158, 229, 0.10);
 }
 
 .main-fields {
@@ -112,7 +112,7 @@ h1 {
 
 .form-note {
     margin: 5px 0 21px;
-    color: #b7aac9;
+    color: #455a68;
     font-size: 12px;
 }
 
@@ -137,7 +137,7 @@ h1 {
 }
 
 label span, .gender-field legend span {
-    color: #c5a1f3;
+    color: #1676b3;
 }
 
 .field input {
@@ -146,17 +146,17 @@ label span, .gender-field legend span {
     min-width: 0;
     height: 23px;
     padding: 9px 4%;
-    border: 1px solid #4a395e;
+    border: 1px solid #7cc7ff;
     border-radius: 5px;
-    background-color: #120e1e;
-    color: #f5edff;
+    background-color: #ffffff;
+    color: #111111;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
 input[type="date"] {
-    background-color: #eae2f4;
-    color: #271d37;
+    background-color: #eaf6ff;
+    color: #111111;
 }
 
 .gender-field {
@@ -197,7 +197,7 @@ input[type="date"] {
 
 .buttons input {
     padding: 11px 17px;
-    border: 1px solid #644986;
+    border: 1px solid #7cc7ff;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -207,46 +207,46 @@ input[type="date"] {
 
 .primary-button {
     flex: 1;
-    background-color: #a477dc;
-    color: #160e22;
+    background-color: #2f9ee5;
+    color: #111111;
     font-weight: bold;
 }
 
 .primary-button:hover {
-    background-color: #bd97ec;
+    background-color: #7cc7ff;
 }
 
 .secondary-button {
-    background-color: #251b35;
-    color: #ded0f0;
+    background-color: #eaf6ff;
+    color: #111111;
 }
 
 .secondary-button:hover {
-    background-color: #39294e;
+    background-color: #7cc7ff;
 }
 
 .error-message {
     margin: 0 0 12px;
-    color: #ffb7cc;
+    color: #b42340;
     font-size: 13px;
 }
 
 .switch-page {
     margin: 22px 0 0;
     padding-top: 18px;
-    border-top: 1px solid #3b2b50;
-    color: #b7aac9;
+    border-top: 1px solid #7cc7ff;
+    color: #455a68;
     text-align: center;
     font-size: 13px;
 }
 
 .switch-page a {
-    color: #d4b3ff;
+    color: #1676b3;
 }
 
 footer {
     margin-top: 20px;
-    color: #a798bc;
+    color: #455a68;
     text-align: center;
     font-size: 11px;
     letter-spacing: 1px;
@@ -285,4 +285,4 @@ footer {
     }
 }
 
-input:focus, a:focus { box-shadow: 0 0 0 2px #c39af8; }
+input:focus, a:focus { box-shadow: 0 0 0 2px #7cc7ff; }

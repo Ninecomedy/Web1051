@@ -9,10 +9,10 @@
 .collection-nav a {
     display: inline-block;
     padding: 11px 18px;
-    border: 1px solid #aa91e8;
-    border-radius: 6px;
-    background-color: #ad94ed;
-    color: #171222;
+    border: 1px solid #f5d000;
+    border-radius: 0;
+    background-color: #f5d000;
+    color: #111111;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.8;
@@ -20,10 +20,10 @@
     transition: background-color 0.2s;
 }
 .collection-nav a:hover {
-    background-color: #c5b1f7;
-    color: #171222;
+    background-color: #dfbd00;
+    color: #111111;
 }
 .collection-nav a:focus {
-    box-shadow: 0 0 0 2px #c4a5f2;
+    box-shadow: 0 0 0 2px #111111;
 }
 .collection-source { text-align: center; font: 12px Arial, sans-serif; padding: 15px; }

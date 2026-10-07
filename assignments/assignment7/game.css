@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 
-body > .collection-.navigation {
+body > .collection-nav {
     width: 90%;
     margin-bottom: 30px;
 }

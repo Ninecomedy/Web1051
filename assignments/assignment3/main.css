@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     margin: 0;
@@ -31,11 +29,6 @@ a {
 
 a:hover {
     color: #4c2b19;
-}
-
-a:focus {
-    outline: 2px solid #884625;
-    outline-offset: 4px;
 }
 
 img {
@@ -72,18 +65,18 @@ img {
     text-decoration: none;
 }
 
-nav {
+.navigation {
     display: flex;
     flex-wrap: wrap;
     gap: 22px;
 }
 
-nav a {
+.navigation a {
     font-size: 14px;
     text-decoration: none;
 }
 
-nav a:hover {
+.navigation a:hover {
     text-decoration: underline;
 }
 
@@ -128,8 +121,8 @@ h1 span {
 
 .intro-photo img {
     width: 100%;
-    height: 460px;
-    object-fit: cover;
+    height: auto;
+    
     border-radius: 12px;
 }
 
@@ -178,7 +171,7 @@ h1 span {
 }
 
 .photo-card {
-    width: 48%;
+    width: auto;
     margin-top: 10px;
     padding: 12px;
     background-color: #fffdf9;
@@ -194,8 +187,8 @@ h1 span {
 
 .photo-card img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: auto;
+    
     border-radius: 6px;
 }
 
@@ -211,7 +204,7 @@ h1 span {
 }
 
 .ingredients-panel {
-    width: 35%;
+    width: auto;
     padding: 26px;
     background-color: #f0e7d9;
     border: 1px solid #ded0bd;
@@ -219,7 +212,7 @@ h1 span {
 }
 
 .instructions-panel {
-    width: 62%;
+    width: auto;
     padding: 30px;
     background-color: #fffdf9;
     border: 1px solid #e4d8c9;
@@ -314,7 +307,7 @@ h1 span {
     }
 
     .intro-photo img {
-        height: 380px;
+        height: auto;
     }
 
     .instructions-panel {
@@ -340,11 +333,11 @@ h1 span {
         font-size: 26px;
     }
 
-    nav {
+    .navigation {
         gap: 15px;
     }
 
-    nav a {
+    .navigation a {
         font-size: 13px;
     }
 
@@ -354,12 +347,17 @@ h1 span {
     }
 
     .intro-photo img {
-        height: 320px;
+        height: auto;
     }
 }
 
 
-.ingredient-check { display: flex; align-items: flex-start; gap: 8px; cursor: pointer; }
-.ingredient-check input { margin-top: 6px; flex-shrink: 0; }
-.ingredient-ready span { text-decoration: line-through; opacity: 0.65; }
-.ingredient-progress { margin: 20px auto; padding: 12px; width: 90%; max-width: 1100px; text-align: center; font-size: 14px; border: 1px solid #bfae96; border-radius: 6px; }
+
+
+
+
+
+.photo-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 4%; }
+.recipe-content { display: grid; grid-template-columns: 35fr 62fr; gap: 3%; }
+@media (max-width: 800px) { .recipe-content { grid-template-columns: 1fr; gap: 0; } .ingredients-panel, .instructions-panel { width: auto; } }
+@media (max-width: 500px) { .photo-gallery { grid-template-columns: 1fr; gap: 0; } .photo-card { width: auto; } }

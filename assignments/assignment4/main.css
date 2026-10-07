@@ -1,6 +1,4 @@
-* {
-	box-sizing: border-box;
-}
+
 
 
 body {
@@ -187,17 +185,17 @@ li {
 
 	margin: 0 auto 25px;
 
-	overflow: hidden;
+	
 }
 
 
 .image-box img {
 
-	width: 100%;
+	width: auto; max-width: auto;
 
-	height: 100%;
+	height: auto; max-height: 100%;
 
-	object-fit: contain;
+	
 
 	border-radius: 12px;
 
@@ -207,7 +205,7 @@ li {
 
 .image-box img:hover {
 
-	transform: scale(1.05);
+	transform: translateY(-2px);
 }
 
 
@@ -217,7 +215,7 @@ li {
 
 	height: 400px;
 
-	width: 100%;
+	width: auto;
 }
 
 
@@ -433,7 +431,10 @@ li {
 	}
 
 }
-.ingredient-check { display: flex; align-items: flex-start; gap: 8px; cursor: pointer; }
-.ingredient-check input { margin-top: 6px; flex-shrink: 0; }
-.ingredient-ready span { text-decoration: line-through; opacity: 0.65; }
-.ingredient-progress { margin: 20px auto; padding: 12px; width: 90%; max-width: 1100px; text-align: center; font-size: 14px; border: 1px solid #bfae96; border-radius: 6px; }
+
+
+
+
+
+.grid-container > div { min-width: 0; }
+img { max-width: 100%; height: auto; }

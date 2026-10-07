@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login | NOVA</title>
-    <link rel="stylesheet" href="main.css?v=1">
-    <script src="login.js?v=1"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="login.js"></script>
     <link rel="stylesheet" href="../navigation.css">
 </head>
 <body>
-    <nav class="collection-nav" aria-label="Portfolio navigation"><a href="../../index.html#assignments">← Back to portfolio</a></nav>
+    <div class="collection-nav"><a href="../../index.html#assignments">← Back to portfolio</a></div>
     <header class="site-header">
         <a class="brand" href="login.html">NOVA</a>
-        <nav><a href="register.html">Register</a><a href="login.html" class="active" aria-current="page">Login</a></nav>
+        <div class="navigation"><a href="register.html">Register</a><a href="login.html" class="active">Login</a></div>
     </header>
     <main class="page-container login-page">
         <div class="intro">
             <h1>Welcome back.</h1>
-            <p>Your space is ready. Sign in to continue.</p>
+            <p class="body-copy">Your space is ready. Sign in to continue.</p>
         </div>
         <section class="form-card">
             <form name="myLogin" id="myLogin" method="post">
                 <fieldset class="main-fields">
                     <legend>Login</legend>
-                    <p class="form-note">Enter your username and password to continue.</p>
+                    <p class="body-copy form-note">Enter your username and password to continue.</p>
                 <div class="field">
                     <label for="username">Username <span>*</span></label>
                     <input type="text" name="username" id="username" autocomplete="username" required>
@@ -36,7 +36,7 @@
                         <input type="reset" value="Clear" id="clearBtn" class="secondary-button">
                         <input type="submit" value="Login" id="loginBtn" class="primary-button">
                     </div>
-                    <p class="switch-page">New to NOVA? <a href="register.html">Create an account</a></p>
+                    <p class="body-copy switch-page">New to NOVA? <a href="register.html">Create an account</a></p>
                 </fieldset>
             </form>
         </section>

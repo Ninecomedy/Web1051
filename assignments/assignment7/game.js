@@ -109,9 +109,9 @@ function addBox() {
     tempbox.id = "box" + i;
 
     // สุ่มตำแหน่งกล่อง
-    tempbox.style.left = Math.random() * (500 - 25) + "px";
+    tempbox.style.left = Math.random() * 90 + "%";
 
-    tempbox.style.top = Math.random() * (500 - 25) + "px";
+    tempbox.style.top = Math.random() * 90 + "%";
 
     // เพิ่มกล่องเข้าไปใน #layer
     gameLayer.appendChild(tempbox);

@@ -1,5 +1,6 @@
-.collection-nav { display: block; margin: 0; padding: 12px 5%; text-align: left; background-color: #191626; font-family: Arial, sans-serif; }
-.collection-nav a { display: inline-block; color: #e4d7ff; font-size: 13px; text-decoration: none; padding: 3px 0; }
-.collection-nav a:hover { color: #ffffff; text-decoration: underline; }
-.collection-nav a:focus { outline: 2px solid #c4a5f2; outline-offset: 4px; }
+.collection-.navigation { display: block; margin: 0; padding: 12px 5%; text-align: left; background-color: #191626; font-family: Arial, sans-serif; }
+.collection-.navigation a { display: inline-block; color: #e4d7ff; font-size: 13px; text-decoration: none; padding: 3px 0; }
+.collection-.navigation a:hover { color: #ffffff; text-decoration: underline; }
 .collection-source { text-align: center; font: 12px Arial, sans-serif; padding: 15px; }
+
+.collection-nav a:focus { box-shadow: 0 0 0 2px #c4a5f2; }

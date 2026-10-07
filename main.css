@@ -96,7 +96,7 @@ h1 span { color: #b7a0ee; }
     .project-intro { padding-top: 35px; }
 }
 
-.hero-copy h1 { font-size: 38px;  }
+.hero-copy h1 { font-size: 38px; color: #b7a0ee; }
 @media only screen and (max-width: 950px) {
     .hero-copy h1 { font-size: 30px; }
 }

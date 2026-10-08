@@ -10,7 +10,6 @@ function pageLoad() {
 
     if (form) {
         form.addEventListener("submit", validateForm);
-        form.addEventListener("reset", clearError);
     }
 }
 
@@ -35,18 +34,11 @@ function validateForm(event) {
         if (
             fields[i].type !== "submit" &&
             fields[i].type !== "button" &&
-            fields[i].type !== "reset" &&
-            fields[i].type !== "radio" &&
             fields[i].value.trim() === ""
         ) {
-            errorMsg.textContent = "กรุณากรอกข้อมูลให้ครบทุกช่อง";
+            errorMsg.innerHTML = "กรุณากรอกข้อมูลให้ครบทุกช่อง";
             return false;
         }
-    }
-
-    if (!form["gender"].value) {
-        errorMsg.textContent = "Please select your gender.";
-        return false;
     }
 
     const username = form["username"].value.trim();
@@ -62,7 +54,7 @@ function validateForm(event) {
     // 1. ตรวจสอบว่า Password ทั้ง 2 ช่องตรงกันหรือไม่
     // =========================================================
     if (password !== retypePassword) {
-        errorMsg.textContent = "Password และ Confirm Password ไม่ตรงกัน";
+        errorMsg.innerHTML = "Password และ Confirm Password ไม่ตรงกัน";
         return false;
     }
 
@@ -70,7 +62,7 @@ function validateForm(event) {
     // =========================================================
     // 2. เคลียร์ข้อความแจ้งเตือน
     // =========================================================
-    errorMsg.textContent = "";
+    errorMsg.innerHTML = "";
 
 
     // =========================================================
@@ -89,7 +81,4 @@ function validateForm(event) {
     window.location.href = "login.html";
 
     return true;
-}
-function clearError() {
-    document.getElementById("errormsg").textContent = "";
 }

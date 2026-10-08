@@ -1,46 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login | NOVA</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="login.js"></script>
-    <link rel="stylesheet" href="../navigation.css">
-</head>
-<body>
-    <div class="collection-nav"><a href="../../index.html#assignments">← Back to portfolio</a></div>
-    <header class="site-header">
-        <a class="brand" href="login.html">NOVA</a>
-        <div class="navigation"><a href="register.html">Register</a><a href="login.html" class="active">Login</a></div>
-    </header>
-    <main class="page-container login-page">
-        <div class="intro">
-            <h1>Welcome back.</h1>
-            <p class="body-copy">Your space is ready. Sign in to continue.</p>
-        </div>
-        <section class="form-card">
-            <form name="myLogin" id="myLogin" method="post">
-                <fieldset class="main-fields">
-                    <legend>Login</legend>
-                    <p class="body-copy form-note">Enter your username and password to continue.</p>
-                <div class="field">
-                    <label for="username">Username <span>*</span></label>
-                    <input type="text" name="username" id="username" autocomplete="username" required>
-                </div>
-                <div class="field">
-                    <label for="password">Password <span>*</span></label>
-                    <input type="password" name="password" id="password" autocomplete="current-password" required>
-                </div>
-                    <div class="buttons">
-                        <input type="reset" value="Clear" id="clearBtn" class="secondary-button">
-                        <input type="submit" value="Login" id="loginBtn" class="primary-button">
-                    </div>
-                    <p class="body-copy switch-page">New to NOVA? <a href="register.html">Create an account</a></p>
-                </fieldset>
-            </form>
-        </section>
-        <footer>NOVA &nbsp; / &nbsp; Assignment 6</footer>
-    </main>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<script type="text/javascript" src="login.js"></script>
+	</head>
+	<body>
+		<form name="myLogin" id = "myLogin">
+			<fieldset>
+				<legend>Login</legend>
+				Username: 
+				<input type="text" name="username" id="username" required>
+				<br>
+				Password: 
+				<input type="password" name="password" required>
+				<br>
+				<input type="submit" value="Login" id="loginBtn">
+				<input type="reset" value="Clear" id="clearBtn">
+
+			</fieldset>
+			
+
+		</form>
+		
+	</body>
 </html>

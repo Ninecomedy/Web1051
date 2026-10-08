@@ -1,81 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Register | NOVA</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="register.js"></script>
-    <link rel="stylesheet" href="../navigation.css">
-</head>
-<body>
-    <div class="collection-nav"><a href="../../index.html#assignments">← Back to portfolio</a></div>
-    <header class="site-header">
-        <a class="brand" href="login.html">NOVA</a>
-        <div class="navigation"><a href="register.html" class="active">Register</a><a href="login.html">Login</a></div>
-    </header>
-    <main class="page-container ">
-        <div class="intro">
-            <h1>Create your account.</h1>
-            <p class="body-copy">Set up your profile and get ready to connect.</p>
-        </div>
-        <section class="form-card">
-            <form name="myRegister" id="myRegister" action="login.html" method="post">
-                <fieldset class="main-fields">
-                    <legend>Register</legend>
-                    <p class="body-copy form-note">All fields marked * are required.</p>
-                    <div class="form-row">
-                <div class="field">
-                    <label for="firstname">First name <span>*</span></label>
-                    <input type="text" name="firstname" id="firstname" autocomplete="given-name" required>
-                </div>
-                <div class="field">
-                    <label for="lastname">Last name <span>*</span></label>
-                    <input type="text" name="lastname" id="lastname" autocomplete="family-name" required>
-                </div>
-                    </div>
-                    <fieldset class="gender-field">
-                        <legend>Gender <span>*</span></legend>
-                        <div class="radio-options">
-                            <label><input type="radio" name="gender" value="male" required> Male</label>
-                            <label><input type="radio" name="gender" value="female"> Female</label>
-                            <label><input type="radio" name="gender" value="other"> Other</label>
-                        </div>
-                    </fieldset>
-                    <div class="form-row">
-                <div class="field">
-                    <label for="bday">Birthday <span>*</span></label>
-                    <input type="date" name="bday" id="bday" autocomplete="bday" required>
-                </div>
-                <div class="field">
-                    <label for="email">Email address <span>*</span></label>
-                    <input type="email" name="email" id="email" autocomplete="email" required>
-                </div>
-                    </div>
-                <div class="field">
-                    <label for="username">Username <span>*</span></label>
-                    <input type="text" name="username" id="username" autocomplete="username" required>
-                </div>
-                    <div class="form-row">
-                <div class="field">
-                    <label for="password">Password <span>*</span></label>
-                    <input type="password" name="password" id="password" autocomplete="new-password" required>
-                </div>
-                <div class="field">
-                    <label for="confirm-password">Confirm password <span>*</span></label>
-                    <input type="password" name="password" id="confirm-password" autocomplete="new-password" required>
-                </div>
-                    </div>
-                    <p id="errormsg" class="body-copy error-message" role="alert"></p>
-                    <div class="buttons">
-                        <input type="reset" value="Reset" id="resetBtn" class="secondary-button">
-                        <input type="submit" value="Create account" id="registerBtn" class="primary-button">
-                    </div>
-                    <p class="body-copy switch-page">Already have an account? <a href="login.html">Login</a></p>
-                </fieldset>
-            </form>
-        </section>
-        <footer>NOVA &nbsp; / &nbsp; Assignment 6</footer>
-    </main>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+		<script type="text/javascript" src="register.js"></script>
+	</head>
+	<body>
+		<form name="myRegister" id="myRegister" action="login.html">
+			<fieldset>
+				<legend>Register</legend>
+				<span>* require</span> <br>
+				<span id="errormsg"></span> <br>
+				First name*: 
+				<input type="text" name="firstname" required>
+				Last name*: 
+				<input type="text" name="lastname" >
+				<br>
+				Gender*: 
+				<input type="radio" name="gender" value="male" >Male
+				<input type="radio" name="gender" value="female" >Female
+				<input type="radio" name="gender" value="other" >Other
+				<br>
+				Birthday*: 
+				<input type="date" name="bday" value="" >
+				<br>
+				Email address*: 
+				<input type="email" name="email" >
+				<br>
+				Username*: 
+				<input type="text" name="username" >
+				<br>
+				Password*: 
+				<input type="password" name="password" required>
+				<br>
+				Retype Password*: 
+				<input type="password" name="password" required>
+				<br>
+				<input type="submit" value="Register" id="registerBtn">
+				<input type="reset" value="Reset" id="resetBtn">
+			</fieldset>
+		</form>
+
+		
+	</body>
 </html>
